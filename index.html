@@ -1,0 +1,1061 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/main.css">
+  <title>Build a Technical Documentation Page</title>
+</head>
+
+<body>
+  <div class="icon-wrapper">
+    <span id="dropdown-icon" class="dropdown-icon">&#9656;</span>
+    <span class="dropdown-title">Contents</span>
+  </div>
+
+  <!-- Dropdown Menu -->
+  <nav id="navbar" class="sidebar sidebar-position">
+    <header>
+      <h1>Learn Python</h1>
+    </header>
+    <div class="contents-list">
+      <a href="#What_is_Python?" class="nav-link">What is Python?</a>
+      <a href="#Python_Syntax" class="nav-link">Python Syntax</a>
+      <a href="#Python_Variables" class="nav-link">Python Variables</a>
+      <a href="#Python_Numbers" class="nav-link">Python Numbers</a>
+      <a href="#Python_Casting" class="nav-link">Python Casting</a>
+      <a href="#Python_Strings" class="nav-link">Python Strings</a>
+      <a href="#Python_Operators" class="nav-link">Python Operators</a>
+      <a href="#Python_Lists" class="nav-link">Python Lists</a>
+      <a href="#Python_Tuples" class="nav-link">Python Tuples</a>
+      <a href="#Python_Sets" class="nav-link">Python Sets</a>
+      <a href="#Python_Dictionaries" class="nav-link">Python Dictionaries</a>
+      <a href="#Python_Conditions" class="nav-link">Python Conditions</a>
+      <a href="#Python_While_Loops" class="nav-link">Python While Loops</a>
+      <a href="#Python_For_Loops" class="nav-link">Python For Loops</a>
+      <a href="#Python_Functions" class="nav-link">Python Functions</a>
+      <a href="#Python_Arrays" class="nav-link">Python Arrays</a>
+      <a href="#Python_Classes_and_Objects" class="nav-link">Python Classes and Objects</a>
+      <a href="#Python_Modules" class="nav-link">Python Modules</a>
+    </div>
+  </nav>
+
+  <main id="main-doc">
+    <div class="main-content">
+      <!-- What is Python? -->
+      <section class="main-section" id="What_is_Python?">
+        <header class="main-section__header">What is Python?</header>
+        <p>Python is a popular programming language. It was created in 1991 by Guido van Rossum.</p>
+        <h2>It is used for:</h2>
+        <ul>
+          <li>web development (server-side),</li>
+          <li>software development,</li>
+          <li>mathematics,</li>
+          <li>system scripting.</li>
+        </ul>
+        <h2>What can Python do?</h2>
+        <ul>
+          <li>Python can be used on a server to create web applications.</li>
+          <li>Python can be used alongside software to create workflows.</li>
+          <li>Python can connect to database systems. It can also read and modify files.</li>
+          <li>Python can be used to handle big data and perform complex mathematics.</li>
+          <li>Python can be used for rapid prototyping, or for production-ready software development.</li>
+        </ul>
+        <h2>Why Python?</h2>
+        <ul>
+          <li>Python works on different platforms (Windows, Mac, Linux, Raspberry Pi, etc).</li>
+          <li>Python has a simple syntax similar to the English language.</li>
+          <li>Python has syntax that allows developers to write programs with fewer lines than some other programming
+            languages.</li>
+          <li>Python runs on an interpreter system, meaning that code can be executed as soon as it is written. This
+            means that
+            prototyping can be very quick.</li>
+          <li>Python can be treated in a procedural way, an object-orientated way or a functional way.</li>
+        </ul>
+        <h2>Good to know</h2>
+        <ul>
+          <li>The most recent major version of Python is Python 3. However, Python 2, although not being updated with
+            anything
+            other than security updates, is still quite popular.</li>
+          <li>It is possible to write Python in an Integrated Development Environment, such as Thonny, Pycharm,
+            Netbeans or Eclipse
+            which are particularly useful when managing larger collections of Python files.</li>
+        </ul>
+        <h2>Python Syntax compared to other programming languages</h2>
+        <ul>
+          <li>Python was designed to for readability, and has some similarities to the English language with influence
+            from mathematics.</li>
+          <li>Python uses new lines to complete a command, as opposed to other programming languages which often use
+            semicolons
+            or parentheses.</li>
+          <li>Python relies on indentation, using whitespace, to define scope; such as the scope of loops, functions
+            and classes.
+            Other programming languages often use curly-brackets for this purpose.</li>
+        </ul>
+      </section>
+
+      <!-- Python Syntax -->
+      <section class="main-section" id="Python_Syntax">
+        <header class="main-section__header">Python Syntax</header>
+        <h2>Execute Python Syntax</h2>
+        <p>As we learned in the previous page, Python syntax can be executed by writing directly in the Command Line:</p>
+        <code>>>> print("Hello, World!")<br>
+          Hello, World!</code>
+        <p>Or by creating a python file on the server, using the .py file extension, and running it in the Command
+          Line:</p>
+        <code>C:\Users\Your Name>python myfile.py</code>
+        <h2>Python Indentations</h2>
+        <p>Where in other programming languages the indentation in code is for readability only, in Python the
+          indentation is
+          very important.</p>
+        <p>Python uses indentation to indicate a block of code.</p>
+        <code>if 5 > 2:<br>
+          &nbsp;&nbsp;print("Five is greater than two!")</code>
+        <h2>Comments</h2>
+        <p>Python has commenting capability for the purpose of in-code documentation.</p>
+        <p>Comments start with a #, and Python will render the rest of the line as a comment:</p>
+        <code>#This is a comment.<br>
+          print("Hello, World!")</code>
+        <h2>Docstrings</h2>
+        <p>Python also has extended documentation capability, called docstrings.</p>
+        <p>Docstrings can be one line, or multiline.</p>
+        <p>Python uses triple quotes at the beginning and end of the docstring:</p>
+        <code>"""This is a<br>
+          multiline docstring."""<br>
+          print("Hello, World!")</code>
+      </section>
+
+      <!-- Python Variables -->
+      <section class="main-section" id="Python_Variables">
+        <header class="main-section__header">Python Variables</header>
+        <h2>Creating Variables</h2>
+        <p>Unlike other programming languages, Python has no command for declaring a variable.</p>
+        <p>A variable is created the moment you first assign a value to it.</p>
+        <code>x = 5<br>
+          y = "John"<br>
+          print(x)<br>
+          print(y)</code>
+        <p>Variables do not need to be declared with any particular type and can even change type after they have been
+          set.</p>
+        <code>x = 4 # x is of type int<br>
+          x = "Sally" # x is now of type str<br>
+          print(x)</code>
+        <h2>Variable Names</h2>
+        <p>A variable can have a short name (like x and y) or a more descriptive name (age, carname, total_volume).
+          Rules for
+          Python variables:</p>
+        <ul>
+          <li>A variable name must start with a letter or the underscore character</li>
+          <li>A variable name cannot start with a number</li>
+          <li>A variable name can only contain alpha-numeric characters and underscores (A-z, 0-9, and _ )</li>
+          <li>Variable names are case-sensitive (age, Age and AGE are three different variables)</li>
+        </ul>
+        <strong>
+          <i>Remember that variables are case-sensitive</i>
+        </strong>
+        <h2>Output Variables</h2>
+        <p>The Python
+          <span class="inline-code">print</span> statement is often used to output variables.</p>
+        <p>To combine both text and a variable, Python uses the
+          <span class="inline-code">+</span> character:</p>
+        <code>x = "awesome"<br>
+          print("Python is " + x)</code>
+        <p>You can also use the
+          <span class="inline-code">+</span> character to add a variable to another variable:</p>
+        <code>x = "Python is "<br>
+          y = "awesome"<br>
+          z = x + y<br>
+          print(z)</code>
+        <p>For numbers, the
+          <span class="inline-code">+</span> character works as a mathematical operator:</p>
+        <code>x = 5<br>
+          y = 10<br>
+          print(x + y)</code>
+        <p>If you try to combine a string and a number, Python will give you an error:</p>
+        <code>x = 5<br>
+          y = "John"<br>
+          print(x + y)</code>
+      </section>
+
+      <!-- Python Numbers -->
+      <section class="main-section" id="Python_Numbers">
+        <header class="main-section__header">Python Numbers</header>
+        <p>There are three numeric types in Python:</p>
+        <ul>
+          <li>int</li>
+          <li>float</li>
+          <li>complex</li>
+        </ul>
+        <p>Variables of numeric types are created when you assign a value to them:</p>
+        <code>x = 1 # int<br>
+          y = 2.8 # float<br>
+          z = 1j # complex</code>
+        <p>To verify the type of any object in Python, use the
+          <span class="inline-code">type()</span> function:</p>
+        <code>print(type(x))<br>
+          print(type(y))<br>
+          print(type(z))</code>
+        <h2>Int</h2>
+        <p>Int, or integer, is a whole number, positive or negative, without decimals, of unlimited length.</p>
+        <code>x = 1<br>
+          y = 35656222554887711<br>
+          z = -3255522<br>
+        </code>
+        <h2>Float</h2>
+        <p>Float, or "floating point number" is a number, positive or negative, containing one or more decimals.</p>
+        <code>x = 1.10<br>
+          y = 1.0<br>
+          z = -35.59</code>
+        <p>Float can also be scientific numbers with an "e" to indicate the power of 10.</p>
+        <code>x = 35e3<br>
+          y = 12E4<br>
+          z = -87.7e100</code>
+        <h2>Complex</h2>
+        <p>Complex numbers are written with a "j" as the imaginary part:</p>
+        <code>x = 3+5j<br>
+          y = 5j<br>
+          z = -5j</code>
+      </section>
+
+      <!-- Python Casting -->
+      <section class="main-section" id="Python_Casting">
+        <header class="main-section__header">Python Casting</header>
+        <h2>Specify a Variable Type</h2>
+        <p>There may be times when you want to specify a type on to a variable. This can be done with casting. Python
+          is an
+          object-orientated language, and as such it uses classes to define data types, including its primitive types.</p>
+        <p>Casting in python is therefore done using constructor functions:</p>
+        <ul>
+          <li>
+            <span class="inline-code">int()</span> - constructs an integer number from an integer literal, a float
+            literal (by rounding down to the
+            previous whole number) literal, or a string literal (providing the string represents a whole number)</li>
+          <li>
+            <span class="inline-code">float()</span> - constructs a float number from an integer literal, a float
+            literal or a string literal (providing
+            the string represents a float or an integer)</li>
+          <li>
+            <span class="inline-code">str()</span> - constructs a string from a wide variety of data types, including
+            strings, integer literals and
+            float literals</li>
+        </ul>
+        <p>Integers:</p>
+        <code>x = int(1) # x will be 1<br>
+          y = int(2.8) # y will be 2<br>
+          z = int("3") # z will be 3</code>
+        <p>Floats:</p>
+        <code>x = float(1) # x will be 1.0<br>
+          y = float(2.8) # y will be 2.8<br>
+          z = float("3") # z will be 3.0<br>
+          w = float("4.2") # w will be 4.2</code>
+        <p>Strings:</p>
+        <code>x = str("s1") # x will be 's1'<br>
+          y = str(2) # y will be '2'<br>
+          z = str(3.0) # z will be '3.0'</code>
+      </section>
+
+      <!-- Python Strings -->
+      <section class="main-section" id="Python_Strings">
+        <header class="main-section__header">Python Strings</header>
+        <h2>String Literals</h2>
+        <p>String literals in python are surrounded by either single quotation marks, or double quotation marks.</p>
+        <p>
+          <span class="inline-code">'hello'</span> is the same as
+          <span class="inline-code">"hello"</span>.</p>
+        <p>Strings can be output to screen using the print function. For example:
+          <span class="inline-code">print("hello")</span>.</p>
+        <p>Like many other popular programming languages, strings in Python are arrays of bytes representing unicode
+          characters.
+          However, Python does not have a character data type, a single character is simply a string with a length of
+          1.
+          Square brackets can be used to access elements of the string.</p>
+        <p>Get the character at position 1:</p>
+        <code>a = "hello"<br>
+          print(a[1])</code>
+        <p>Substring. Get the characters from position 2 to position 5:</p>
+        <code>b = "world"<br>
+          print(b[2:5])</code>
+        <p>The strip() method removes any whitespace from the beginning or the end:</p>
+        <code>a = " Hello, World! "<br>
+          print(a.strip()) # returns "Hello, World!"</code>
+        <p>The len() method returns the length of a string:</p>
+        <code>a = "Hello, World!"<br>
+          print(len(a))</code>
+        <p>The lower() method returns the string in lower case:</p>
+        <code>a = "Hello, World!"<br>
+          print(a.lower())</code>
+        <p>The upper() method returns the string in upper case:</p>
+        <code>a = "Hello, World!"<br>
+          print(a.upper())</code>
+        <p>The replace() method replaces a string with another string:</p>
+        <code>a = "Hello, World!"<br>
+          print(a.replace("H", "J"))</code>
+        <p>The split() method splits the string into substrings if it finds instances of the separator:</p>
+        <code>a = "Hello, World!"<br>
+          print(a.split(",")) # returns ['Hello', ' World!']</code>
+      </section>
+
+      <!-- Python Operators -->
+      <section class="main-section" id="Python_Operators">
+        <header class="main-section__header">Python Operators</header>
+        <p>Operators are used to perform operations on variables and values.</p>
+        <p>Python divides the operators in the following groups:</p>
+        <ul>
+          <li>Arithmetic operators</li>
+          <li>Assignment operators</li>
+          <li>Comparison operators</li>
+          <li>Logical operators</li>
+          <li>Identity operators</li>
+          <li>Membership operators</li>
+          <li>Bitwise operators</li>
+        </ul>
+      </section>
+
+      <!-- Python Lists -->
+      <section class="main-section" id="Python_Lists">
+        <header class="main-section__header">Python Lists</header>
+        <h2>Python Collections (Arrays)</h2>
+        <p>There are four collection data types in the Python programming language:</p>
+        <ul>
+          <li>
+            <strong>List</strong> is a collection which is ordered and changeable. Allows duplicate members.</li>
+          <li>
+            <strong>Tuple</strong> is a collection which is ordered and unchangeable. Allows duplicate members.</li>
+          <li>
+            <strong>Set</strong> is a collection which is unordered and unindexed. No duplicate members.</li>
+          <li>
+            <strong>Dictionary</strong> is a collection which is unordered, changeable and indexed. No duplicate
+            members.</li>
+        </ul>
+        <p>When choosing a collection type, it is useful to understand the properties of that type. Choosing the right
+          type
+          for a particular data set could mean retention of meaning, and, it could mean an increase in efficiency or
+          security.</p>
+        <h2>List</h2>
+        <p>A list is a collection which is ordered and changeable. In Python lists are written with square brackets.</p>
+        <p>Create a List:</p>
+        <code>thislist = ["apple", "banana", "cherry"]<br>
+          print(thislist)</code>
+        <p>Change the second item:</p>
+        <code>thislist = ["apple", "banana", "cherry"]<br>
+          thislist[1] = "blackcurrant"<br>
+          print(thislist)</code>
+        <h2>The list() Constructor</h2>
+        <p>It is also possible to use the
+          <span class="inline-code">list()</span> constructor to make a list. To add an item to the list use
+          <span class="inline-code">append()</span> object method. To remove a specific item use the
+          <span class="inline-code">remove()</span> object method. The
+          <span class="inline-code">len()</span> function returns the length of the list.</p>
+        <p>Using the list() constructor to make a List:</p>
+        <code>thislist = list(("apple", "banana", "cherry"))<br> # note the double round-brackets<br>
+          print(thislist)</code>
+        <p>Using the append() method to append an item:</p>
+        <code>thislist = list(("apple", "banana", "cherry"))<br>
+          thislist.append("damson")<br>
+          print(thislist)</code>
+        <p>Using the remove() method to remove an item:</p>
+        <code>thislist = list(("apple", "banana", "cherry"))<br>
+          thislist.remove("banana")<br>
+          print(thislist)</code>
+        <p>The len() method returns the number of items in a list:</p>
+        <code>thislist = list(("apple", "banana", "cherry"))<br>
+          print(len(thislist))</code>
+      </section>
+
+      <!-- Python Tuples -->
+      <section class="main-section" id="Python_Tuples">
+        <header class="main-section__header">Python Tuples</header>
+        <h2>Tuple</h2>
+        <p>A tuple is a collection which is ordered and unchangeable. In Python tuples are written with round brackets.</p>
+        <p>Create a Tuple:</p>
+        <code>thistuple = ("apple", "banana", "cherry")<br>
+          print(thistuple)</code>
+        <p>Return the item in position 1:</p>
+        <code>thistuple = ("apple", "banana", "cherry")<br>
+          print(thistuple[1])</code>
+        <p>You cannot change values in a tuple:</p>
+        <code>thistuple = ("apple", "banana", "cherry")<br>
+          thistuple[1] = "blackcurrant" # test changeability<br>
+          print(thistuple)</code>
+        <h2>The tuple() Constructor</h2>
+        <p>It is also possible to use the
+          <span class="inline-code">tuple()</span> constructor to make a tuple. The
+          <span class="inline-code">len()</span> function returns the length of the tuple.</p>
+        <p>Using the tuple() method to make a tuple:</p>
+        <code>thistuple = tuple(("apple", "banana", "cherry")) # note the double round-brackets<br>
+          print(thistuple)</code>
+        <p>The len() method returns the number of items in a tuple:</p>
+        <code>thistuple = tuple(("apple", "banana", "cherry"))<br>
+          print(len(thistuple))</code>
+        <br>
+        <br>
+        <strong>
+          <em>Note: You cannot remove items in a tuple</em>
+        </strong>
+      </section>
+
+      <!-- Python Sets -->
+      <section class="main-section" id="Python_Sets">
+        <header class="main-section__header">Python Sets</header>
+        <h2>Set</h2>
+        <p>A set is a collection which is unordered and unindexed. In Python sets are written with curly brackets.</p>
+        <p>Create a Set:</p>
+        <code>thisset = {"apple", "banana", "cherry"}<br>
+          print(thisset)</code>
+        <br>
+        <br>
+        <strong>
+          <em>Note: the set list is unordered, so the items will appear in a random order.</em>
+        </strong>
+        <h2>The set() Constructor</h2>
+        <p>It is also possible to use the
+          <span class="inline-code">set()</span> constructor to make a set. You can use the
+          <span class="inline-code">add()</span> object method to add an item, and the
+          <span class="inline-code">remove()</span> object method to remove an item from the set. The
+          <span class="inline-code">len()</span> function returns the size of the set.</p>
+        <p>Using the set() constructor to make a set:</p>
+        <code>thisset = set(("apple", "banana", "cherry")) # note the double round-brackets<br>
+          print(thisset)</code>
+        <p>Using the add() method to add an item:</p>
+        <code>thisset = set(("apple", "banana", "cherry"))<br>
+          thisset.add("damson")<br>
+          print(thisset)</code>
+        <p>Using the remove() method to remove an item:</p>
+        <code>thisset = set(("apple", "banana", "cherry"))<br>
+          thisset.remove("banana")<br>
+          print(thisset)</code>
+        <p>Using the len() method to return the number of items:</p>
+        <code>thisset = set(("apple", "banana", "cherry"))<br>
+          print(len(thisset))</code>
+      </section>
+
+      <!-- Python Dictionaries -->
+      <section class="main-section" id="Python_Dictionaries">
+        <header class="main-section__header">Python Dictionaries</header>
+        <h2>Dictionary</h2>
+        <p>A dictionary is a collection which is unordered, changeable and indexed. In Python dictionaries are written
+          with
+          curly brackets, and they have keys and values.</p>
+        <p>Create and print a dictionary:</p>
+        <code>thisdict = {<br>
+          &nbsp;&nbsp;"apple": "green",<br>
+          &nbsp;&nbsp;"banana": "yellow",<br>
+          &nbsp;&nbsp;"cherry": "red"<br>
+          }<br>
+          print(thisdict)</code>
+        <p>Change the apple color to "red":</p>
+        <code>thisdict = {<br>
+          &nbsp;&nbsp;"apple": "green",<br>
+          &nbsp;&nbsp;"banana": "yellow",<br>
+          &nbsp;&nbsp;"cherry": "red"<br>
+          }<br>
+          thisdict["apple"] = "red"<br>
+          print(thisdict)</code>
+        <h2>The dict() Constructor</h2>
+        <p>It is also possible to use the
+          <span class="inline-code">dict()</span> constructor to make a dictionary:</p>
+        <code> thisdict = dict(apple="green", banana="yellow", cherry="red")<br>
+          # note that keywords are not string literals<br>
+          # note the use of equals rather than colon for the assignment<br>
+          print(thisdict)</code>
+        <h2>Adding Items</h2>
+        <p>Adding an item to the dictionary is done by using a new index key and assigning a value to it:</p>
+        <code>thisdict = dict(apple="green", banana="yellow", cherry="red")<br>
+          thisdict["damson"] = "purple"<br>
+          print(thisdict)</code>
+        <h2>Removing Items</h2>
+        <p>Removing a dictionary item must be done using the
+          <span class="inline-code">del()</span> function in python:</p>
+        <code>thisdict = dict(apple="green", banana="yellow", cherry="red")<br>
+          del(thisdict["banana"])<br>
+          print(thisdict)</code>
+        <h2>Get the Length of a Dictionary</h2>
+        <p>The
+          <span class="inline-code">len()</span> function returns the size of the dictionary:</p>
+        <code>thisdict = dict(apple="green", banana="yellow", cherry="red")<br>
+          print(len(thisdict))</code>
+      </section>
+
+      <!-- Python Conditions -->
+      <section class="main-section" id="Python_Conditions">
+        <header class="main-section__header">Python Conditions</header>
+        <h2>Python Conditions and If statements</h2>
+        <p>Python supports the usual logical conditions from mathematics:</p>
+        <ul>
+          <li>Equals:
+            <span class="inline-code">a == b</span>
+          </li>
+          <li>Not Equals:
+            <span class="inline-code">a != b</span>
+          </li>
+          <li>Less than:
+            <span class="inline-code">a
+              < b</span> </li> <li>Less than or equal to:
+                <span class="inline-code">a
+                  <=b </span> </li> <li>Greater than:
+                    <span class="inline-code">a > b</span>
+          </li>
+          <li>Greater than or equal to:
+            <span class="inline-code">a >= b</span>
+          </li>
+        </ul>
+        <p>These conditions can be used in several ways, most commonly in "if statements" and loops.</p>
+        <p>An "if statement" is written by using the
+          <span class="inline-code">if</span> keyword.</p>
+        <p>If statement:</p>
+        <code>a = 33<br>
+          b = 200<br>
+          if b > a: print("b is greater than a")</code>
+        <p>In this example we use two variables,
+          <span class="inline-code">a</span> and
+          <span class="inline-code">b</span>, which are used as part of the if statement to test whether
+          <span class="inline-code">if</span> b is greater than
+          <span class="inline-code">a</span>. As
+          <span class="inline-code">a</span> is
+          <span class="inline-code">33</span>, and
+          <span class="inline-code">b</span> is
+          <span class="inline-code">200</span>, we know that 200 is greater than 33, and so we print to screen that "b
+          is greater than a".</p>
+        <h2>Indentation</h2>
+        <p>Python relies on indentation, using whitespace, to define scope in the code. Other programming languages
+          often use
+          curly-brackets for this purpose.</p>
+        <p>Statements on new lines MUST use indentations:</p>
+        <code>a = 33<br>
+          b = 200<br>
+          if b > a:<br>
+          &nbsp;&nbsp;print("b is greater than a")</code>
+        <p>If statement, without indentation:</p>
+        <code>a = 33<br>
+          b = 200<br>
+          if b > a:<br>
+          &nbsp;&nbsp;print("b is greater than a") # you will get an error</code>
+        <h2>Elif</h2>
+        <p>The
+          <span class="inline-code">elif</span> keyword is pythons way of saying "if the previous conditions were not
+          true, then do this condition".</p>
+        <code>a = 33<br>
+          b = 33<br>
+          if b > a:<br>
+          &nbsp;&nbsp;print("b is greater than a")<br>
+          elif a == b:<br>
+          &nbsp;&nbsp;print("a and b are equal")</code>
+        <p>In this example
+          <span class="inline-code">a</span> is equal to
+          <span class="inline-code">b</span>, so the first condition is not true, but the
+          <span class="inline-code">elif</span> condition is true, so we print to screen that "a and b are equal".</p>
+        <h2>Else</h2>
+        <p>The else keyword catches anything which isn't caught by the preceding conditions.</p>
+        <code>a = 200<br>
+          b = 33<br>
+          if b > a:<br>
+          &nbsp;&nbsp;print("b is greater than a")<br>
+          elif a == b:<br>
+          &nbsp;&nbsp;print("a and b are equal")<br>
+          else:<br>
+          &nbsp;&nbsp;print("a is greater than b")</code>
+        <p>In this example
+          <span class="inline-code">a</span> is greater to
+          <span class="inline-code">b</span>, so the first condition is not true, also the
+          <span class="inline-code">elif</span> condition is not true, so we go to the
+          <span class="inline-code">else</span> condition and print to screen that "a is greater than b".</p>
+      </section>
+
+      <!-- Python While Loops -->
+      <section class="main-section" id="Python_While_Loops">
+        <header class="main-section__header">Python While Loops</header>
+        <p>Python has two primitive loop commands:</p>
+        <ul>
+          <li>
+            <span class="inline-code">while</span> loops</li>
+          <li>
+            <span class="inline-code">for</span> loops</li>
+        </ul>
+        <h2>The while Loop</h2>
+        <p>With the
+          <span class="inline-code">while</span> loop we can execute a set of statements as long as a condition is
+          true.</p>
+        <p>Print i as long as i is less than 6:</p>
+        <code>i = 1<br>
+          while i < 6:<br>
+            &nbsp;&nbsp;print(i)<br>
+            &nbsp;&nbsp;i += 1</code>
+        <br>
+        <br>
+        <strong>
+          <em>Note: remember to increment i, or else the loop will continue forever.</em>
+        </strong>
+        <p>The
+          <span class="inline-code">while</span> loop requires relevant variables to be ready, in this example we need
+          to define an indexing variable,
+          <span class="inline-code">i</span>, which we set to 1.</p>
+        <h2>The break Statement</h2>
+        <p>With the
+          <span class="inline-code">break</span> statement we can stop the loop even if the while condition is true:</p>
+        <p>Exit the loop when i is 3:</p>
+        <code>i = 1<br>
+          while i < 6:<br>
+            &nbsp;&nbsp;print(i)<br>
+            &nbsp;&nbsp;if i == 3:<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;break<br>
+            &nbsp;&nbsp;i += 1</code>
+        <h2>The continue Statement</h2>
+        <p>With the
+          <span class="inline-code">continue</span> statement we can stop the current iteration, and continue with the
+          next:</p>
+        <p>Continue to the next iteration if i is 3:</p>
+        <code>i = 0<br>
+          while i < 6:<br>
+            &nbsp;&nbsp;i += 1<br>
+            &nbsp;&nbsp;if i == 3:<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;continue<br>
+            &nbsp;&nbsp;print(i)</code>
+      </section>
+
+      <!-- Python For Loops -->
+      <section class="main-section" id="Python_For_Loops">
+        <header class="main-section__header">Python For Loops</header>
+        <p>A
+          <span class="inline-code">for</span> loop is used for iterating over a sequence (that is either a list, a
+          tuple or a string).</p>
+        <p>This is less like the
+          <span class="inline-code">for</span> keyword in other programming language, and works more like an iterator
+          method as found in other object-orientated
+          programming languages.</p>
+        <p>With the
+          <span class="inline-code">for</span> loop we can execute a set of statements, once for each item in a list,
+          tuple, set etc.</p>
+        <p>Print each fruit in a fruit list:</p>
+        <code>fruits = ["apple", "banana", "cherry"]<br>
+          for x in fruits:<br>
+          &nbsp;&nbsp;print(x)</code>
+        <p>The
+          <span class="inline-code">for</span> loop does not require an indexing variable to set beforehand, as the for
+          command itself allows for this.</p>
+        <h2>The break Statement</h2>
+        <p>With the
+          <span class="inline-code">break</span> statement we can stop the loop before it has looped through all the
+          items:</p>
+        <p>Exit the loop when x is "banana":</p>
+        <code>fruits = ["apple", "banana", "cherry"]<br>
+          for x in fruits:<br>
+          &nbsp;&nbsp;if x == "banana":<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;break<br>
+          &nbsp;&nbsp;print(x)</code>
+        <h2>The continue Statement</h2>
+        <p>With the
+          <span class="inline-code">continue</span> statement we can stop the current iteration of the loop, and
+          continue wit the next:</p>
+        <p>Do not print banana:</p>
+        <code>fruits = ["apple", "banana", "cherry"]<br>
+          for x in fruits:<br>
+          &nbsp;&nbsp;if x == "banana":<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;continue<br>
+          &nbsp;&nbsp;print(x)</code>
+        <h2>The range() Function</h2>
+        <p>To loop through a set of code a specified number of times, we can use the
+          <span class="inline-code">range()</span> function,</p>
+        <p>The
+          <span class="inline-code">range()</span> function returns a sequence of numbers, starting from 0 by default,
+          and increments by 1 (by default),
+          and ends at a specified number.</p>
+        <p>Using the range() function:</p>
+        <code>for x in range(6):<br>
+          &nbsp;&nbsp;print(x)</code>
+        <p>Note that
+          <span class="inline-code">range(6)</span> is not the values of 0 to 6, but the values 0 to 5.</p>
+        <p>The
+          <span class="inline-code">range()</span> function defaults to 0 as a starting value, however it is possible
+          to specify the starting value
+          by adding a parameter:
+          <span class="inline-code">range(2, 6)</span> , which means values from 2 to 6 (but not including 6):</p>
+        <p>Using the start parameter:</p>
+        <code>for x in range(2, 6):<br>
+          &nbsp;&nbsp;print(x)</code>
+        <p>The
+          <span class="inline-code">range()</span> function defaults to increment the sequence by 1, however it is
+          possible to specify the increment
+          value by adding a third parameter:
+          <span class="inline-code">range(2, 30, 3)</span>:</p>
+        <p>Increment the sequence with 3 (default is 1):</p>
+        <code>for x in range(2, 30, 3):<br>
+          &nbsp;&nbsp;print(x)</code>
+      </section>
+
+      <!-- Python Functions -->
+      <section class="main-section" id="Python_Functions">
+        <header class="main-section__header">Python Functions</header>
+        <p>A function is a block of code which only runs when it is called.</p>
+        <p>You can pass data, known as parameters, into a function.</p>
+        <p>A function can return data as a result.</p>
+        <h2>Creating a Function</h2>
+        <p>In Python a function is defined using the
+          <span class="inline-code">def</span> keyword:</p>
+        <code>def my_function():<br>
+          &nbsp;&nbsp;print("Hello from a function")</code>
+        <h2>Calling a Function</h2>
+        <p>To call a function, use the function name followed by parenthesis:</p>
+        <code>def my_function():<br>
+          &nbsp;&nbsp;print("Hello from a function")<br><br>
+
+          my_function()</code>
+        <h2>Parameters</h2>
+        <p>Information can be passed to functions as parameter.</p>
+        <p>Parameters are specified after the function name, inside the parentheses. You can add as many parameters as
+          you want,
+          just separate them with a comma.</p>
+        <p>The following example has a function with one parameter (fname). When the function is called, we pass along
+          a first
+          name, which is used inside the function to print the full name:</p>
+        <code>def my_function(fname):<br>
+          &nbsp;&nbsp;print(fname + " Refsnes")<br><br>
+
+          my_function("Emil")<br>
+          my_function("Tobias")<br>
+          my_function("Linus")</code>
+        <h2>Default Parameter Value</h2>
+        <p>The following example shows how to use a default paramter value.</p>
+        <p>If we call the function without parameter, it uses the default value:</p>
+        <code>def my_function(country = "Norway"):<br>
+          &nbsp;&nbsp;print("I am from " + country)<br><br>
+
+          my_function("Sweden")<br>
+          my_function("India")<br>
+          my_function()<br>
+          my_function("Brazil")</code>
+        <h2>Return Values</h2>
+        <p>To let a function return a value, use the
+          <span class="inline-code">return</span> statement:</p>
+        <code>def my_function(x):<br>
+          &nbsp;&nbsp;return 5 * x<br><br>
+
+          print(my_function(3))<br>
+          print(my_function(5))<br>
+          print(my_function(9))</code>
+        <h2>Lambda Functions</h2>
+        <p>In python, the keyword
+          <span class="inline-code">lambda</span> is used to create what is known as anonymous functions. These are
+          essentially functions with no pre-defined
+          name. They are good for constructing adaptable functions, and thus good for event handling.</p>
+        <p>An anonymous function that returns the double value of i:</p>
+        <code>myfunc = lambda i: i*2<br>
+          print(myfunc(2))</code>
+        <p>Lambda defined functions can have more than one defined input, as shown here:</p>
+        <code>myfunc = lambda x,y: x*y<br>
+          print(myfunc(3,6))</code>
+        <p>The power of
+          <span class="inline-code">lambda</span> is better shown when you generate anonymous functions at run-time, as
+          shown in the following example.</p>
+        <code>def myfunc(n):<br>
+          &nbsp;&nbsp;return lambda i: i*n<br><br>
+
+          doubler = myfunc(2)<br>
+          tripler = myfunc(3)<br>
+          val = 11<br>
+          print("Doubled: " + str(doubler(val)) + ". Tripled: " + str(tripler(val)))</code>
+        <p>Here we see the defined function,
+          <span class="inline-code">myfunc</span>, which creates an anonymous function that multiplies variable
+          <span class="inline-code">i</span> with variable
+          <span class="inline-code">n</span>.</p>
+        <p>We then create two variables
+          <span class="inline-code">doubler</span> and
+          <span class="inline-code">tripler</span>, which are assigned to the result of
+          <span class="inline-code">myfunc</span> passing in
+          <span class="inline-code">2</span> and
+          <span class="inline-code">3</span> respectively. They are assigned to the generated
+          <span class="inline-code">lambda</span> functions.</p>
+      </section>
+
+      <!-- Python Arrays -->
+      <section class="main-section" id="Python_Arrays">
+        <header class="main-section__header">Python Arrays</header>
+        <h2>Arrays</h2>
+        <p>Arrays are used to store multiple values in one single variable:</p>
+        <p>Create an array containing car names:</p>
+        <code>cars = ["Ford", "Volvo", "BMW"]</code>
+        <h2>What is an Array?</h2>
+        <p>An array is a special variable, which can hold more than one value at a time.</p>
+        <p>If you have a list of items (a list of car names, for example), storing the cars in single variables could
+          look like
+          this:
+        </p>
+        <code>car1 = "Ford";<br>
+          car2 = "Volvo";<br>
+          car3 = "BMW";</code>
+        <p>However, what if you want to loop through the cars and find a specific one? And what if you had not 3 cars,
+          but 300?</p>
+        <p>The solution is an array!</p>
+        <p>An array can hold many values under a single name, and you can access the values by referring to an index
+          number.</p>
+        <strong>
+          <em>Note: Python does not have built-in support for Arrays, but Python lists can be used instead.</em>
+        </strong>
+        <h2>Access the Elements of an Array</h2>
+        <p>You refer to an array element by referring to the index number.</p>
+        <p>Get the value of the first array item:</p>
+        <code>x = cars[0]</code>
+        <p>Modify the value of the first array item:</p>
+        <code>cars[0] = "Toyota"</code>
+        <h2>The Length of an Array</h2>
+        <p>Use the
+          <span class="inline-code">len()</span> method to return the length of an array (the number of elements in an
+          array).</p>
+        <p>Return the number of elements in the
+          <span class="inline-code">cars</span> array:</p>
+        <code>x = len(cars)</code>
+        <br>
+        <br>
+        <strong>
+          <em>Note: The length of an array is always one more than the highest array index.</em>
+        </strong>
+        <h2>Looping Array Elements</h2>
+        <p>You can use the
+          <span class="inline-code">for in</span> loop to loop through all the elements of an array.</p>
+        <p>Print each item in the
+          <span class="inline-code">cars</span> array:</p>
+        <code>for x in cars:<br>
+          print(x)</code>
+        <h2>Adding Array Elements</h2>
+        <p>You can use the
+          <span class="inline-code">append()</span> method to add an element to an array.</p>
+        <p>Add one more element to the
+          <span class="inline-code">cars</span> array:</p>
+        <code>cars.append("Honda")</code>
+        <h2>Removing Array Elements</h2>
+        <p>You can use the
+          <span class="inline-code">pop()</span> method to remove an element from the array.</p>
+        <p>Delete the second element of the
+          <span class="inline-code">cars</span> array:</p>
+        <code>cars.pop(1)</code>
+        <p>You can also use the
+          <span class="inline-code">remove()</span> method to remove an element from the array.</p>
+        <p>Delete the element that has the value "Volvo":</p>
+        <code>cars.remove("Volvo")</code>
+        <br>
+        <br>
+        <strong>
+          <em>Note: The remove() method only removes the first occurrence of the specified value.</em>
+        </strong>
+      </section>
+
+      <!-- Python Classes and Objects -->
+      <section class="main-section" id="Python_Classes_and_Objects">
+        <header class="main-section__header">Python Classes and Objects</header>
+        <h2>Python Classes/Objects</h2>
+        <p>Python is an object oriented programming language.</p>
+        <p>Almost everything in Python is an object, with its properties and methods.</p>
+        <p>A Class is like an object constructor, or a "blueprint" for creating objects.</p>
+        <h2>Create a Class</h2>
+        <p>To create a class, use the keyword
+          <span class="inline-code">class</span>:</p>
+        <p>Create a class named MyClass, with a property named x:</p>
+        <code>class MyClass:<br>
+          &nbsp;&nbsp;x = 5</code>
+        <h2>Create Object</h2>
+        <p>Now we can use the class named myClass to create objects:</p>
+        <p>reate an object named p1, and print the value of x:</p>
+        <code>p1 = MyClass()<br>
+          print(p1.x)</code>
+        <h2>The __init__() Function</h2>
+        <p>The examples above are classes and objects in their simplest form, and are not really useful in real life
+          applications.</p>
+        <p>To understand the meaning of classes we have to understand the built-in __init__() function.</p>
+        <p>All classes have a function called __init__(), which is always executed when the class is being initiated.</p>
+        <p>Use the __init__() function to assign values to object properties, or other operations that are necessary to
+          do when
+          the object is being created:</p>
+        <p>Create a class named Person, use the __init__() function to assign values for name and age:</p>
+        <code>class Person:<br>
+          &nbsp;&nbsp;def __init__(self, name, age):<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;self.name = name<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;self.age = age<br><br>
+
+          p1 = Person("John", 36)<br><br>
+
+          print(p1.name)<br>
+          print(p1.age)</code>
+        <br>
+        <br>
+        <strong>
+          <em>Note: The
+            <span class="inline-code">__init__()</span> function is called automatically every time the class is being
+            used to create a new object.</em>
+        </strong>
+        <h2>Object Methods</h2>
+        <p>Objects can also contain methods. Methods in objects are functions that belongs to the object.</p>
+        <p>Let us create a method in the Person class:</p>
+        <p>Insert a function that prints a greeting, and execute it on the p1 object:</p>
+        <code>class Person:<br>
+          &nbsp;&nbsp;def __init__(self, name, age):<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;self.name = name<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;self.age = age<br><br>
+
+          &nbsp;&nbsp;def myfunc(self):<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;print("Hello my name is " + self.name)<br><br>
+
+          p1 = Person("John", 36)<br>
+          p1.myfunc()</code>
+        <br>
+        <br>
+        <strong>
+          <em>Note: The
+            <span class="inline-code">self</span> parameter is a reference to the class itself, and is used to access
+            variables that belongs to the
+            class.
+          </em>
+        </strong>
+        <h2>The self Parameter</h2>
+        <p>The
+          <span class="inline-code">self</span> parameter is a reference to the class itself, and is used to access
+          variables that belongs to the class.</p>
+        <p>It does not have to be named
+          <span class="inline-code">self</span> , you can call it whatever you like, but it has to be the first
+          parameter of any function in the class:</p>
+        <p>Use the words mysillyobject and abc instead of self:</p>
+        <code>class Person:<br>
+          &nbsp;&nbsp;def __init__(mysillyobject, name, age):<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;mysillyobject.name = name<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;mysillyobject.age = age<br><br>
+
+          &nbsp;&nbsp;def myfunc(abc):<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;print("Hello my name is " + abc.name)<br><br>
+
+          p1 = Person("John", 36)<br>
+          p1.myfunc()</code>
+        <h2>Modify Object Properties</h2>
+        <p>You can modify properties on objects like this:</p>
+        <p>Set the age of p1 to 40:</p>
+        <code>p1.age = 40</code>
+        <h2>Delete Object Properties</h2>
+        <p>You can delete properties on objects by using the
+          <span class="inline-code">del</span> keyword:</p>
+        <p>Delete the age property from the p1 object:</p>
+        <code>del p1.age</code>
+        <h2>Delete Objects</h2>
+        <p>You can delete objects by using the
+          <span class="inline-code">del</span> keyword:</p>
+        <p>Delete the p1 object:</p>
+        <code>del p1</code>
+      </section>
+
+      <!-- Python Modules -->
+      <section class="main-section" id="Python_Modules">
+        <header class="main-section__header">Python Modules</header>
+        <h2>What is a Module?</h2>
+        <p>Consider a module to be the same as a code library.</p>
+        <p>A file containing a set of functions you want to include in your application.</p>
+        <h2>Create a Module</h2>
+        <p>To create a module just save the code you want in a file with the file extension
+          <span class="inline-code">.py</span>:</p>
+        <p>Save this code in a file named
+          <span class="inline-code">mymodule.py</span>
+        </p>
+        <code>def greeting(name):<br>
+          &nbsp;&nbsp;print("Hello, " + name)</code>
+        <h2>Use a Module</h2>
+        <p>Now we can use the module we just created, by using the
+          <span class="inline-code">import</span> statement:</p>
+        <p>Import the module named mymodule, and call the greeting function:</p>
+        <code>import mymodule<br><br>
+
+          mymodule.greeting("Jonathan")</code>
+        <br>
+        <br>
+        <strong>
+          <em>Note: When using a function from a module, use the syntax: module_name.function_name.</em>
+        </strong>
+        <h2>Variables in Module</h2>
+        <p>The module can contain functions, as already described, but also variables of all types (arrays,
+          dictionaries, objects
+          etc):
+        </p>
+        <p>Save this code in the file
+          <span class="inline-code">mymodule.py</span>
+        </p>
+        <code>person1 = {<br>
+          "name": "John",<br>
+          "age": 36,<br>
+          "country": "Norway"<br>
+          }</code>
+        <p>Import the module named mymodule, and access the person1 dictionary:</p>
+        <code>import mymodule<br>
+
+          a = mymodule.person1["age"]<br>
+          print(a)</code>
+        <h2>Naming a Module</h2>
+        <p>You can name the module file whatever you like, but it must have the file extension
+          <span class="inline-code">.py</span>
+        </p>
+        <h2>Re-naming a Module</h2>
+        <p>You can create an alias when you import a module, by using the
+          <span class="inline-code">as</span> keyword:</p>
+        <p>Create an alias for
+          <span class="inline-code">mymodule</span> called
+          <span class="inline-code">mx</span>:</p>
+        <code>import mymodule as mx<br><br>
+
+          a = mx.person1["age"]<br>
+          print(a)</code>
+        <h2>Built-in Modules</h2>
+        <p>There are several built-in modules in Python, which you can import whenever you like.</p>
+        <p>Import and use the
+          <span class="inline-code">platform</span> module:</p>
+        <code>import platform<br><br>
+
+          x = platform.system()<br>
+          print(x)</code>
+        <h2>Using the dir() Function</h2>
+        <p>There is a built-in function to list all the function names (or variable names) in a module. The
+          <span class="inline-code">dir()</span> function:</p>
+        <p>List all the defined names belonging to the platform module:</p>
+        <code>import platform<br><br>
+
+          x = dir(platform)<br>
+          print(x)</code>
+        <br>
+        <br>
+        <strong>
+          <em>Note: The dir() function can be used on all modules, also the ones you create yourself.</em>
+        </strong>
+        <h2>Import From Module</h2>
+        <p>You can choose to import only parts from a module, by using the
+          <span class="inline-code">from</span> keyword.</p>
+        <p>The module named
+          <span class="inline-code">mymodule</span> has one function and one dictionary:</p>
+        <code>def greeting(name):<br>
+          &nbsp;&nbsp;print("Hello, " + name)<br><br>
+
+          person1 = {<br>
+          &nbsp;&nbsp;"name": "John",<br>
+          &nbsp;&nbsp;"age": 36,<br>
+          &nbsp;&nbsp;"country": "Norway"<br>
+          }</code>
+        <p>Import only the person1 dictionary from the module:</p>
+        <code>from mymodule import person1<br><br>
+
+          print (person1["age"])</code>
+        <br>
+        <br>
+        <strong>
+          <em>Note: When importing using the
+            <span class="inline-code">from</span> keyword, do not use the module name when referring to elements in the
+            module. Example:
+            <span class="inline-code">person1.age</span>, not
+            <span class="inline-code">
+              <del> mymodule.person1.age</del>
+            </span>
+          </em>
+        </strong>
+      </section>
+      <div class="coded-by">Coded by <a href="https://www.freecodecamp.org/fcc5b94da85-6e92-4331-8fbb-c5c610c6a41a"
+          target="_blank">Pavel P.</a> for freeCodeCamp</div>
+    </div>
+  </main>
+
+  <script src="js/main.js"></script>
+  <!-- <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script> -->
+</body>
+
+</html>
